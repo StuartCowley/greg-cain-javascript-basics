@@ -1,62 +1,109 @@
 function negate(a) {
-  // your code here
-};
+  if (a === false) {
+    return true;
+  }
+  return false;
+}
 
 function both(a, b) {
-  // your code here
-};
+  if (a === true && b === true) {
+    return true;
+  }
+  return false;
+}
 
 function either(a, b) {
-  // your code here
-};
+  if (a === true || b === true) {
+    return true;
+  }
+  return false;
+}
 
 function none(a, b) {
-  // your code here
-};
+  if (a === false && b === false) {
+    return true;
+  }
+  return false;
+}
 
 function one(a, b) {
-  // your code here
-};
+  if ((a === true && b === false) || (a === false && b === true)) {
+    return true;
+  }
+  return false;
+}
 
 function truthiness(a) {
-  // your code here
-};
+  if (a) {
+    return true;
+  }
+  return false;
+}
 
 function isEqual(a, b) {
-  // your code here
-};
+  if (a === b) {
+    return true;
+  }
+  return false;
+}
 
 function isGreaterThan(a, b) {
-  // your code here
-};
+  if (a > b) {
+    return true;
+  }
+  return false;
+}
 
 function isLessThanOrEqualTo(a, b) {
-  // your code here
-};
+  if (a <= b) {
+    return true;
+  }
+  return false;
+}
 
 function isOdd(a) {
-  // your code here
-};
+  if (a % 2 !== 0) {
+    return true;
+  }
+  return false;
+}
 
 function isEven(a) {
-  // your code here
-};
+  if (a % 2 === 0) {
+    return true;
+  }
+  return false;
+}
 
 function isSquare(a) {
-  // your code here
-};
+  if (a >= 0 && Math.sqrt(a) % 1 === 0) {
+    return true;
+  }
+  return false;
+}
 
 function startsWith(char, string) {
-  // your code here
-};
+  if (string.startsWith(char)) {
+    return true;
+  }
+  return false;
+}
 
 function containsVowels(string) {
-  // your code here
-};
+  // return string === string.match(/[aeiou]/gi);
+  if (string.match(/[aeiou]/gi)) {
+    return true;
+  }
+  return false
+}
 
 function isLowerCase(string) {
-  // your code here
-};
+  return string === string.toLowerCase();
+  // if (string === string.toLowerCase()) {
+  //   return true;
+  // }
+  // return false;
+}
 
 module.exports = {
   negate,
